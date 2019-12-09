@@ -1,4 +1,8 @@
 
+
+
+
+
 def checkPalindrome(word):
 
     word = word.upper()
@@ -12,6 +16,7 @@ def checkPalindrome(word):
     else:
         print(word+" is no Palindrome")
 
+isItorNot = input("Is your incoming word a Palindrome?: ")
 
 
-checkPalindrome("anna")
+checkPalindrome(isItorNot)
