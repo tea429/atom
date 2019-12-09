@@ -52,7 +52,8 @@ projectS = Listbox(projectList)
 for root, dirs, files in os.walk(PATH):
     head, tail = os.path.split(PATH)
     for file in files:
-        projectS.insert(END,file)
+        if file.endswith(".py"):
+            projectS.insert(END,file)
         #projectS.insert(END, file)
 projectS.pack()
 
