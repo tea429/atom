@@ -50,11 +50,9 @@ projectList = Frame(master=window, bg="white")
 projectList.place(x=10,y=10, width=250, height=500)
 projectS = Listbox(projectList)
 for root, dirs, files in os.walk(PATH):
-    head, tails
+    head, tail = os.path.split(PATH)
     for file in files:
-        file = os.path.join(root, file)
-        file.strip(PATH)
-        print(file)
+        projectS.insert(END,file)
         #projectS.insert(END, file)
 projectS.pack()
 
