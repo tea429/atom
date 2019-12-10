@@ -1,5 +1,7 @@
-//Just a comment
+const name = "Tom"
 
-var life = 100;
+function logger() {
+    console.log(name);
+}
 
-console.log(life);
+logger();
